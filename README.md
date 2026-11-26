@@ -1,17 +1,25 @@
-# JELLYFISH SISTER
+# NEON JELLY
 
-A hand-controlled ASCII jellyfish game. Move your hand to guide the jellyfish, dodge fish, and pinch your fingers to raise a shield.
+一个用手势控制的 ASCII 字符水母小游戏。移动手掌引导水母躲避鱼群，捏合手指举起护盾减免伤害，撑过 60 秒且 AP ≥ 65 即获胜。
 
-## Play
+## 在线试玩
 
-Open the GitHub Pages link (or any HTTPS URL hosting this folder) on a desktop computer with a webcam. Allow camera access when prompted.
+**https://darksideamber-arch.github.io/jellyfish-sister/**
 
-## Controls
+用电脑浏览器打开，允许摄像头权限即可开始（需要摄像头，手机体验不佳）。
 
-- Move your hand — guide the jellyfish
-- Pinch fingers — raise shield (40% damage reduction, 1s)
-- Pinch at the start screen — start the game
+## 玩法
 
-## Notes
+- **移动手掌** — 引导水母上下游动，躲开小鱼和鲨鱼
+- **捏合手指** — 举起护盾，受到的伤害减少 40%，持续 1 秒；松开后再捏合可再次举盾
+- **开始框捏合** — 开始游戏
+- 撞到猫可以回血，撞到章鱼会被短暂定身
+- 撑过 60 秒且 AP ≥ 65 获胜，结算按点数评级 S / A / B / C
 
-All dependencies (Three.js, lil-gui, MediaPipe wasm, hand landmark model, fonts) are bundled locally in `vendor/`. No external CDN required.
+游戏内按 **CONFIG** 可实时调整各项参数（伤害、速度、护盾比例、水母外观等）。
+
+## 技术说明
+
+基于 Three.js（ASCII 字符渲染）+ MediaPipe HandLandmarker（21 点手势识别）。所有依赖（Three.js、lil-gui、MediaPipe wasm、手势模型、字体）已打包在 `vendor/` 目录及内嵌于 `index.html`，无需访问外部 CDN，纯静态即可运行。
+
+构建时间：2026-11
