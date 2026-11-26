@@ -4,7 +4,7 @@
 
 ## 在线试玩
 
-**https://darksideamber-arch.github.io/jellyfish-sister/**
+**https://darksideamber-arch.github.io/Neon-Jelly/**
 
 用电脑浏览器打开，允许摄像头权限即可开始（需要摄像头，手机体验不佳）。
 
